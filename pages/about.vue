@@ -31,7 +31,7 @@
         <h4 class="text-3xl">
           Deployment to Heroku
         </h4>
-        <p>Oh, the headache.</p>
+        <p>The backend and frontend apps are deployed separately.</p>
       </div>
     </div>
   </div>

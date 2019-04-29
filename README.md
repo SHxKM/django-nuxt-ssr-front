@@ -1,10 +1,12 @@
-## Django Nuxt SSR (frontend repo)
+## Django Nuxt SSR
 
-The backend repo can be found [here](https://github.com/SHxKM/django-vue-ssr).
+**Note**: README.md is the same on both backend and frontend repositories (locally symlinked).
+
+[backend repo](https://github.com/SHxKM/django-vue-ssr) | [frontend repo](https://github.com/SHxKM/django-nuxt-ssr-front).
 
 ### TL;DR
 
-A simple to-do app built with Django REST framework, Nuxt.js, and Tailwind.
+A simple (now realtime) to-do app built with: Django REST framework, Django Channels, Nuxt.js, and Tailwind.
 
 ### About 
 
@@ -18,7 +20,7 @@ It can serve as a general template, but is not to be relied upon to utilize best
 
 This web-app is built as a Vue SSR app, which means some of the content is rendered server-side in order to avoid SEO penalties.
 
-The backend is built in Python with Django and the Django REST framework.
+The backend is built in Python with Django and the Django REST framework, it uses Django Channels to allow real-time functionality.
 
 The frontend is where it gets more interesting. Unlike its v1 counterpart written purely in Vue, v2 isn't an SPA, and it utilizes the `Nuxt.js` framework to make life a little easier. A `Vuex` store handles state management, and the young but wonderful `Tailwind` is used as a CSS framekwork.
 
