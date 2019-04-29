@@ -1,0 +1,17 @@
+{
+  "root": true,
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 2017,
+    "sourceType": "module"
+  },
+  "extends": [
+    "@nuxtjs"
+  ],
+  "rules": {
+    "quotes": [0, "double"], // don't warn on double quotes
+    "indent": [0, 4], // don't warn on double quotes
+    "vue/html-indent": [0, 4],
+    "no-console": "off" // don't warn on double quotes
+  }
+}
