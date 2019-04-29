@@ -18,12 +18,14 @@ It can serve as a general template, but is not to be relied upon to utilize best
 
 ### Stack
 
-This web-app is built as a Vue SSR app, which means some of the content is rendered server-side in order to avoid SEO penalties.
-
-The backend is built in Python with Django and the Django REST framework, it uses Django Channels to allow real-time functionality.
-
-The frontend is where it gets more interesting. Unlike its v1 counterpart written purely in Vue, v2 isn't an SPA, and it utilizes the `Nuxt.js` framework to make life a little easier. A `Vuex` store handles state management, and the young but wonderful `Tailwind` is used as a CSS framekwork.
-
+- backend:
+    - Django
+    - Django REST framework
+    - Django Channels
+- frontend:
+    - Vue
+    - Nuxt.js
+    - Tailwind CSS
 
 ### Heroku
 
