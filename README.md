@@ -1,6 +1,6 @@
 ## Django Nuxt SSR (frontend repo)
 
-This backend repo can be found [here](https://github.com/SHxKM/django-vue-ssr).
+The backend repo can be found [here](https://github.com/SHxKM/django-vue-ssr).
 
 ### TL;DR
 
