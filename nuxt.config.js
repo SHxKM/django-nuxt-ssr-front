@@ -90,10 +90,10 @@ export default {
   ** Build configuration
   */
   build: {
-    analyze: {
-      analyzerMode: 'server',
-      openAnalyzer: true
-    },
+    // analyze: {
+    //   analyzerMode: 'server',
+    //   openAnalyzer: true
+    // },
     extractCSS: true,
     /*
     ** You can extend webpack config here
