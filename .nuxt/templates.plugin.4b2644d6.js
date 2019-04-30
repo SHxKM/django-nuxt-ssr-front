@@ -4,8 +4,8 @@ import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fort
 
 config.autoAddCss = false
 
-    import  { fab as fortawesomefreebrandssvgicons_fab } from '@fortawesome/free-brands-svg-icons'
-    library.add(fortawesomefreebrandssvgicons_fab)
+    import  { faGithub as fortawesomefreebrandssvgicons_faGithub } from '@fortawesome/free-brands-svg-icons'
+    library.add(fortawesomefreebrandssvgicons_faGithub)
 
 Vue.component('fa', FontAwesomeIcon)
 Vue.component('fa-layers', FontAwesomeLayers)

@@ -131,7 +131,7 @@ export async function setContext(app, context) {
   if (!app.context) {
     app.context = {
       isStatic: process.static,
-      isDev: true,
+      isDev: false,
       isHMR: false,
       app,
       store: app.store,
@@ -233,9 +233,6 @@ export function middlewareSeries(promises, appContext) {
 export function promisify(fn, context) {
   let promise
   if (fn.length === 2) {
-      console.warn('Callback-based asyncData, fetch or middleware calls are deprecated. ' +
-        'Please switch to promises or async/await syntax')
-
     // fn(context, callback)
     promise = new Promise((resolve) => {
       fn(context, function (err, data) {
@@ -257,14 +254,14 @@ export function promisify(fn, context) {
 
 // Imported from vue-router
 export function getLocation(base, mode) {
-  let path = window.location.pathname
+  let path = decodeURI(window.location.pathname)
   if (mode === 'hash') {
     return window.location.hash.replace(/^#\//, '')
   }
   if (base && path.indexOf(base) === 0) {
     path = path.slice(base.length)
   }
-  return decodeURI(path || '/') + window.location.search + window.location.hash
+  return (path || '/') + window.location.search + window.location.hash
 }
 
 export function urlJoin() {

@@ -3,18 +3,16 @@ import pkg from './package'
 
 dotenv.config({ path: '.env' })
 
-// const path = require('path') (check later)
-// const PurgecssPlugin = require('purgecss-webpack-plugin')
-// const glob = require('glob-all')
-//
-//
-// class TailwindExtractor {
-//   static extract(content) {
-//     return content.match(/[A-z0-9-:\/]+/g) || []
-//   }
-// }.env
-// .sample-env
-// README.md
+const PurgecssPlugin = require('purgecss-webpack-plugin')
+const glob = require('glob-all')
+const path = require('path')
+import axios from 'axios' // we'll need this later for our dynamic routes
+
+class TailwindExtractor {
+  static extract(content) {
+    return content.match(/[A-z0-9-:\/]+/g) || [];
+  }
+}
 
 export default {
   mode: 'universal',
@@ -68,7 +66,7 @@ export default {
         // import whole set, should probably add tree-shaking for production projects
         {
           set: '@fortawesome/free-brands-svg-icons',
-          icons: ['fab']
+          icons: ['faGithub']
         }
       ]
     }]
@@ -92,16 +90,45 @@ export default {
   ** Build configuration
   */
   build: {
-    // analyze: {
-    //   analyzerMode: 'server',
-    //   openAnalyzer: true
-    // },
-    // extractCSS: true,
+    analyze: {
+      analyzerMode: 'server',
+      openAnalyzer: true
+    },
+    extractCSS: true,
     /*
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-
+      // Remove unused CSS using purgecss. See https://github.com/FullHuman/purgecss
+      // for more information about purgecss.
+      config.plugins.push(
+          new PurgecssPlugin({
+            // Specify the locations of any files you want to scan for class names.
+            paths: glob.sync([
+              path.join(__dirname, './pages/**/*.vue'),
+              path.join(__dirname, './layouts/**/*.vue'),
+              path.join(__dirname, './components/**/*.vue')
+            ]),
+            extractors: [
+              {
+                extractor: TailwindExtractor,
+                // Specify the file extensions to include when scanning for
+                // class names.
+                extensions: ["html", "vue"]
+              }
+            ],
+            whitelist: [
+              "html",
+              "body",
+              "ul",
+              "ol",
+              "pre",
+              "code",
+              "blockquote"
+            ],
+            whitelistPatterns: [/\bhljs\S*/]
+          })
+      )
     }
   }
 }
