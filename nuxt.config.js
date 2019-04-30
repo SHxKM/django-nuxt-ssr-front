@@ -99,6 +99,7 @@ export default {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
+      config.resolve.alias['@fortawesome/fontawesome-free-brands$'] = '@fortawesome/fontawesome-free-brands/shakable.es.js'
       // Remove unused CSS using purgecss. See https://github.com/FullHuman/purgecss
       // for more information about purgecss.
       config.plugins.push(
@@ -126,7 +127,7 @@ export default {
               "code",
               "blockquote"
             ],
-            whitelistPatterns: [/\bhljs\S*/]
+            whitelistPatterns: [/\bhljs\S*/, /fa/] // also ignore font-awesome (find a better way)
           })
       )
     }

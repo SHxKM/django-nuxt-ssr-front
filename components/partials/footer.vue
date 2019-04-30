@@ -6,7 +6,7 @@
       <a href="https://tailwindcss.com/docs/what-is-tailwind/">Tailwind CSS</a>.
     </div>
     <div>
-      <a href="https://github.com/SHxKM/django-vue-ssr" target="_blank"><fa :icon="['fab', 'github']" class="text-base" /></a>
+      <a href="https://github.com/SHxKM/django-vue-ssr" target="_blank"><fa :icon="['fab', 'github']" /></a>
     </div>
   </footer>
 </template>
