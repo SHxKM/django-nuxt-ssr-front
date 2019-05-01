@@ -1,7 +1,7 @@
 <template>
     <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <span class="font-semibold text-xl tracking-tight">Django Nuxt SSR - To Do With Vue</span>
+            <span class="font-semibold text-base lg:text-xl tracking-tight">Django Nuxt SSR - To Do With Vue</span>
         </div>
         <div class="block lg:hidden">
             <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white" @click="toggleBurger">
