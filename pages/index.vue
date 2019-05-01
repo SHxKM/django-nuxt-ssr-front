@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-wrap mt-6">
-    <todo-list class="w-full lg:w-1/4 mr-8 mb-8" />
-    <todo-create-form class="w-full lg:w-1/4 sm:w-3/4 mr-24 mb-8" />
-    <todo-stats class="w-full lg:w-1/4 sm:w-3/4" />
+  <div class="flex flex-wrap mt-6 mr-6 justify-between">
+    <todo-list class="mb-8" />
+    <todo-create-form class="lg:w-1/3" />
+    <todo-stats class="lg:w-1/3 md:w-2/3" />
   </div>
 </template>
 
