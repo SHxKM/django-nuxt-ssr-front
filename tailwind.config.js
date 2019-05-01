@@ -139,13 +139,14 @@ module.exports = {
       '40': '10rem',
       '48': '12rem',
       '56': '14rem',
-      '64': '16rem',
+      '64': '16rem'
     },
     screens: {
+      xs: '380px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
-      xl: '1280px',
+      xl: '1280px'
     },
     fontFamily: {
       sans: [
@@ -221,19 +222,19 @@ module.exports = {
       right: 'right',
       'right-bottom': 'right bottom',
       'right-top': 'right top',
-      top: 'top',
+      top: 'top'
     },
     backgroundSize: {
       auto: 'auto',
       cover: 'cover',
-      contain: 'contain',
+      contain: 'contain'
     },
     borderWidth: {
       default: '1px',
       '0': '0',
       '2': '2px',
       '4': '4px',
-      '8': '8px',
+      '8': '8px'
     },
     borderColor: theme => ({
       ...theme('colors'),
@@ -269,13 +270,13 @@ module.exports = {
       '1/6': '16.66667%',
       '5/6': '83.33333%',
       full: '100%',
-      screen: '100vw',
+      screen: '100vw'
     }),
     height: theme => ({
       auto: 'auto',
       ...theme('spacing'),
       full: '100%',
-      screen: '100vh',
+      screen: '100vh'
     }),
     minWidth: {
       '0': '0',
@@ -284,7 +285,7 @@ module.exports = {
     minHeight: {
       '0': '0',
       full: '100%',
-      screen: '100vh',
+      screen: '100vh'
     },
     maxWidth: {
       xs: '20rem',
@@ -297,11 +298,11 @@ module.exports = {
       '4xl': '56rem',
       '5xl': '64rem',
       '6xl': '72rem',
-      full: '100%',
+      full: '100%'
     },
     maxHeight: {
       full: '100%',
-      screen: '100vh',
+      screen: '100vh'
     },
     padding: theme => theme('spacing'),
     margin: theme => ({ auto: 'auto', ...theme('spacing') }),
@@ -315,7 +316,7 @@ module.exports = {
       right: 'right',
       'right-bottom': 'right bottom',
       'right-top': 'right top',
-      top: 'top',
+      top: 'top'
     },
     boxShadow: {
       default: '0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)',
@@ -325,7 +326,7 @@ module.exports = {
       '2xl': '0 25px 50px -12px rgba(0, 0, 0, .25)',
       inner: 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
       outline: '0 0 0 3px rgba(66,153,225,0.5)',
-      none: 'none',
+      none: 'none'
     },
     zIndex: {
       auto: 'auto',
