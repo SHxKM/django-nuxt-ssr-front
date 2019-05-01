@@ -21,3 +21,4 @@ yarn-error.log*
 __pycache__
 node_modules
 .nuxt
+static/sw.js
