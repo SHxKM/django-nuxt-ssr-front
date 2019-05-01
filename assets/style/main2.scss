@@ -9,10 +9,11 @@
  *
  * @import "tailwindcss/preflight";
  */
-@tailwind base;
+@tailwind  base;
 
 html {
     @apply font-sans;
+
 }
 
 code {
@@ -33,8 +34,10 @@ a {
     @apply underline;
 
     &:hover {
+        //noinspection ALL
         @apply text-teal-700;
     }
+
 }
 
 li, ul, p {

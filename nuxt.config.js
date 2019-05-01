@@ -1,16 +1,14 @@
+import path from 'path'
+import PurgecssPlugin from 'purgecss-webpack-plugin'
+import glob from 'glob-all'
 import dotenv from 'dotenv'
 import pkg from './package'
 
 dotenv.config({ path: '.env' })
 
-const PurgecssPlugin = require('purgecss-webpack-plugin')
-const glob = require('glob-all')
-const path = require('path')
-import axios from 'axios' // we'll need this later for our dynamic routes
-
 class TailwindExtractor {
   static extract(content) {
-    return content.match(/[A-z0-9-:\/]+/g) || [];
+    return content.match(/[A-z0-9-:/]+/g) || []
   }
 }
 
@@ -63,7 +61,7 @@ export default {
     ['nuxt-fontawesome', {
       component: 'fa',
       imports: [
-        // import whole set, should probably add tree-shaking for production projects
+        // aggresive tree-shaking for production projects
         {
           set: '@fortawesome/free-brands-svg-icons',
           icons: ['faGithub']
@@ -95,6 +93,12 @@ export default {
     //   openAnalyzer: true
     // },
     extractCSS: true,
+    postcss: {
+      plugins: {
+        'tailwindcss': {}
+      }
+    },
+
     /*
     ** You can extend webpack config here
     */

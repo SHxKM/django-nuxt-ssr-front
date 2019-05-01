@@ -23,7 +23,6 @@
         },
         mounted() {
             // set-up websocket
-            const self = this
             const chatSocket = new WebSocket(process.env.BASE_WS)
             chatSocket.onmessage = (e) => {
                 const data = JSON.parse(e.data)
