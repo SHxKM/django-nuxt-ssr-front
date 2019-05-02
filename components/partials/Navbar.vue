@@ -14,14 +14,12 @@
                 <nuxt-link
                         class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
                         :to="{'name': 'index'}"
-                        @click.native="toggleBurger"
                 >
                     Home
                 </nuxt-link>
                 <nuxt-link
                         class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
                         :to="{'name': 'about'}"
-                        @click.native="toggleBurger"
                 >
                     About
                 </nuxt-link>
