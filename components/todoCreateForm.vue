@@ -30,11 +30,11 @@
           </label>
         </div>
         <div class="md:w-2/3">
-          <textarea id="task-description" v-model="task.description" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500" placeholder="Remember the milk.."></textarea>
+          <textarea id="task-description" v-model="task.description" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500" placeholder="Remember the milk.." />
         </div>
       </div>
       <div class="md:flex md:items-center">
-        <div class="md:w-1/3" />
+        <div class="md:w-1/3"/>
         <div class="md:w-2/3">
           <button
                   class="bg-teal-500 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
@@ -79,14 +79,8 @@
 </script>
 
 <style scoped>
-
-  .blink-button {
-    animation: blink 1s linear infinite;
-  }
-
   @keyframes blink {
     from { opacity: 100%; }
     to { opacity: 0; }
   }
-
 </style>
