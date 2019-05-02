@@ -12,6 +12,6 @@
     "quotes": [0, "double"], // don't warn on double quotes
     "indent": [0, 4], // don't warn on double quotes
     "vue/html-indent": [0, 4],
-    "no-console": "off", // don't warn on double quotes
+    "no-console": "off" // don't warn on double quotes
   }
 }

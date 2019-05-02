@@ -2,7 +2,6 @@ import path from 'path'
 import PurgecssPlugin from 'purgecss-webpack-plugin'
 import glob from 'glob-all'
 import dotenv from 'dotenv'
-import pkg from './package'
 
 dotenv.config({ path: '.env' })
 

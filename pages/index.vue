@@ -13,14 +13,14 @@
     import todoCreateForm from '../components/todoCreateForm'
 
     export default {
-        
         components: {
             todoList,
             todoStats,
             todoCreateForm
         },
 
-        async fetch({ store, params }) {
+        async fetch({ store }) {
+            // noinspection ES6ShorthandObjectProperty
             await store.dispatch('todo/getToDos')
         },
 

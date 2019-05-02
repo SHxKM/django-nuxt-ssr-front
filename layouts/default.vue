@@ -7,23 +7,26 @@
 </template>
 
 <script>
-    import appNavbar from '~/components/partials/Navbar'
-    import appFooter from '~/components/partials/footer'
-    export default {
-        components: {
-            appNavbar,
-            appFooter
-        },
+  import appNavbar from '~/components/partials/Navbar'
+  import appFooter from '~/components/partials/footer'
+  
+  export default {
+    components: {
+      appNavbar,
+      appFooter
     }
+  }
+
 </script>
 
 <style>
-
-  .page-enter-active, .page-leave-active {
-    transition: all .25s linear;
-  }
-  .page-enter, .page-leave-active {
-    opacity: 0;
-    transform-origin: 50% 50%;
-  }
+/*eslint-disable */
+.page-enter-active, .page-leave-active {
+  transition: all .25s linear;
+}
+.page-enter, .page-leave-active {
+  opacity: 0;
+  transform-origin: 50% 50%;
+}
+/*eslint-enable */
 </style>
