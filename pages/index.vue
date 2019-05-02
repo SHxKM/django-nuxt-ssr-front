@@ -11,16 +11,19 @@
     import todoList from '../components/todoList'
     import todoStats from '../components/todoStats'
     import todoCreateForm from '../components/todoCreateForm'
+
     export default {
+        
         components: {
             todoList,
             todoStats,
             todoCreateForm
         },
+
         async fetch({ store, params }) {
-            console.log("fetch is being called")
             await store.dispatch('todo/getToDos')
         },
+
         mounted() {
             // set-up websocket
             const chatSocket = new WebSocket(process.env.BASE_WS)
@@ -33,7 +36,3 @@
         }
     }
 </script>
-
-<style>
-
-</style>
