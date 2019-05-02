@@ -66,6 +66,9 @@ footer {
 
 }
 
+:invalid {
+    box-shadow: none; // fix for https://stackoverflow.com/questions/47997487/why-do-required-inputs-in-vue-js-seem-to-automatically-trigger-validation-in-chi?rq=1
+}
 
 /**
  * This injects any component classes registered by plugins.
