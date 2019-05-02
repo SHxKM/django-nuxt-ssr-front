@@ -10,13 +10,26 @@
         </div>
         <div :class="burgerToggled ? 'block': 'hidden'" class="w-full  flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-sm lg:flex-grow">
-                <nuxt-link class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" :to="{'name': 'index'}">
+                <!-- todo: find a DRY way -->
+                <nuxt-link
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+                        :to="{'name': 'index'}"
+                        @click.native="toggleBurger"
+                >
                     Home
                 </nuxt-link>
-                <nuxt-link class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" :to="{'name': 'about'}">
+                <nuxt-link
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+                        :to="{'name': 'about'}"
+                        @click.native="toggleBurger"
+                >
                     About
                 </nuxt-link>
-                <a class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white" target="_blank" href="https://github.com/SHxKM/django-vue-ssr">
+                <a
+                    class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+                    target="_blank"
+                    href="https://github.com/SHxKM/django-vue-ssr"
+                >
                     Github
                 </a>
             </div>

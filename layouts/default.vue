@@ -13,7 +13,7 @@
         components: {
             appNavbar,
             appFooter
-        }
+        },
     }
 </script>
 
