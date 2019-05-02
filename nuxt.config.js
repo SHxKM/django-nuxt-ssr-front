@@ -94,8 +94,9 @@ export default {
     // },
     extractCSS: true,
     postcss: {
+      // Add plugin names as key and arguments as value
       plugins: {
-        'tailwindcss': {}
+        'tailwindcss': path.resolve(__dirname, './tailwind.config.js')
       }
     },
 

@@ -22,3 +22,4 @@ __pycache__
 node_modules
 .nuxt
 static/sw.js
+package-lock.json
