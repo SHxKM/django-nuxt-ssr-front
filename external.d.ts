@@ -1,0 +1,1 @@
+declare module 'glob-all'; // just so VS Code is quiet about that import in nuxt.config.js

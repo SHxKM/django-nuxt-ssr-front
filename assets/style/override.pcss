@@ -1,0 +1,59 @@
+html {
+    @apply font-sans;
+
+}
+
+code {
+    @apply bg-purple-200;
+    @apply p-1;
+    @apply rounded;
+    @apply text-purple-600;
+    @apply text-sm;
+
+    a {
+        @apply underline;
+    }
+
+}
+
+a {
+    @apply text-teal-500;
+    @apply underline;
+
+    &:hover {
+        @apply text-teal-700;
+    }
+
+}
+
+li, ul, p {
+    @apply mb-3;
+}
+
+h1, h2, h3, h4, h5 {
+    @apply mb-1;
+}
+
+// this is an anti-accessibility pattern so you should write our own outline sometime
+button:focus {
+    @apply outline-none;
+}
+
+footer {
+
+    a {
+        @apply text-gray-200;
+
+    }
+
+    a:hover {
+        @apply text-white;
+    }
+
+}
+
+:invalid {
+    box-shadow: none; /* fix for https://stackoverflow.com/questions/47997487/why-do-required-inputs-in-vue-js-seem-to-automatically-trigger-validation-in-chi?rq=1 */
+}
+
+
