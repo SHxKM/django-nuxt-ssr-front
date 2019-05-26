@@ -11,12 +11,14 @@
     "generate": "nuxt generate",
     "heroku-postbuild": "npm run build"
   },
+  "typings": "dist/index",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
     "@nuxtjs/axios": "^5.4.1",
     "@nuxtjs/pwa": "^2.6.0",
     "cross-env": "^5.2.0",
     "nuxt": "^2.6.3",
+    "postcss-nested": "^4.1.2",
     "postcss-scss": "^2.0.0",
     "tar": "^4.4.8"
   },
@@ -47,6 +49,7 @@
     "prettier": "^1.16.4",
     "purgecss-webpack-plugin": "^1.5.0",
     "sass-loader": "^7.1.0",
-    "tailwindcss": "^1.0.0-beta.8"
+    "tailwindcss": "^1.0.0-beta.8",
+    "terser-webpack-plugin": "^1.2.3"
   }
 }

@@ -43,7 +43,8 @@ export default {
   ** Global CSS
   */
   css: [
-    { src: '@/assets/style/main2.scss', lang: 'scss' }
+    '@assets/style/main.pcss'
+    // { src: '@/assets/style/main2.scss', lang: 'scss' }
   ],
   /*
   ** Plugins to load before mounting the App
@@ -93,9 +94,10 @@ export default {
     // },
     extractCSS: true,
     postcss: {
+      parser: 'postcss-scss',
       // Add plugin names as key and arguments as value
       plugins: {
-        'tailwindcss': path.resolve(__dirname, './tailwind.config.js')
+        'tailwindcss': path.resolve(__dirname, './tailwind.config.js'),
       }
     },
 
@@ -107,32 +109,32 @@ export default {
       // Remove unused CSS using purgecss. See https://github.com/FullHuman/purgecss
       // for more information about purgecss.
       config.plugins.push(
-          new PurgecssPlugin({
-            // Specify the locations of any files you want to scan for class names.
-            paths: glob.sync([
-              path.join(__dirname, './pages/**/*.vue'),
-              path.join(__dirname, './layouts/**/*.vue'),
-              path.join(__dirname, './components/**/*.vue')
-            ]),
-            extractors: [
-              {
-                extractor: TailwindExtractor,
-                // Specify the file extensions to include when scanning for
-                // class names.
-                extensions: ["html", "vue"]
-              }
-            ],
-            whitelist: [
-              "html",
-              "body",
-              "ul",
-              "ol",
-              "pre",
-              "code",
-              "blockquote"
-            ],
-            whitelistPatterns: [/\bhljs\S*/, /fa/] // also ignore font-awesome (find a better way)
-          })
+        new PurgecssPlugin({
+          // Specify the locations of any files you want to scan for class names.
+          paths: glob.sync([
+            path.join(__dirname, './pages/**/*.vue'),
+            path.join(__dirname, './layouts/**/*.vue'),
+            path.join(__dirname, './components/**/*.vue')
+          ]),
+          extractors: [
+            {
+              extractor: TailwindExtractor,
+              // Specify the file extensions to include when scanning for
+              // class names.
+              extensions: ["html", "vue"]
+            }
+          ],
+          whitelist: [
+            "html",
+            "body",
+            "ul",
+            "ol",
+            "pre",
+            "code",
+            "blockquote"
+          ],
+          whitelistPatterns: [/\bhljs\S*/, /fa/] // also ignore font-awesome (find a better way)
+        })
       )
     }
   }

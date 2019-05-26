@@ -34,7 +34,6 @@ a {
     @apply underline;
 
     &:hover {
-        //noinspection ALL
         @apply text-teal-700;
     }
 
@@ -67,7 +66,7 @@ footer {
 }
 
 :invalid {
-    box-shadow: none; // fix for https://stackoverflow.com/questions/47997487/why-do-required-inputs-in-vue-js-seem-to-automatically-trigger-validation-in-chi?rq=1
+    box-shadow: none; /* fix for https://stackoverflow.com/questions/47997487/why-do-required-inputs-in-vue-js-seem-to-automatically-trigger-validation-in-chi?rq=1 */
 }
 
 /**
