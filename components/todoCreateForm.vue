@@ -7,6 +7,7 @@
           <label
             class="block text-gray-700 font-bold md:left mb-1 md:mb-0 pr-4"
             name="to do item title"
+            for="task-title"
           >Title</label>
         </div>
         <div class="md:w-2/3">
@@ -25,6 +26,7 @@
           <label
             class="block text-gray-700 font-bold md:text-left mb-1 md:mb-0 pr-4"
             name="to do item description"
+            for="task-description"
           >Description</label>
         </div>
         <div class="md:w-2/3">
