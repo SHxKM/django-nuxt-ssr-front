@@ -16,13 +16,13 @@
       <code>Vuex</code> store (state) in order to update the todo counter whenever a change occurs.
     </p>
     <div class="bg-green-200 rounded p-3 border-green-400 border-2 max-w-xs mb-3">
-      <p class="text-green-700">
+      <p class="text-green-800">
         <span class="font-bold">Realtime:</span> Open two different tabs to see how
         item creation and deletion are synced betwen clients.
       </p>
     </div>
     <div class="bg-yellow-200 rounded p-3 border-yellow-400 border-2 max-w-xs">
-      <p class="text-yellow-700">
+      <p class="text-yellow-800">
         <span class="font-bold">Note:</span> This demo app is hosted on a free Heroku
         dyno
         <a

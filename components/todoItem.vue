@@ -1,8 +1,8 @@
 <template>
   <div class="card rounded border-2 mb-4">
     <div class="p-3">
-      <div class="text-lg mb-2 font-medium">{{ todo.title }}</div>
-      <div class="text-gray-600 mb-3">{{ todo.description }}</div>
+      <div class="text-lg mb-2 font-semibold">{{ todo.title }}</div>
+      <div class="text-gray-800 mb-3">{{ todo.description }}</div>
       <div class="text-right mr-1 mt-5">
         <button
           :id="todo.id"
