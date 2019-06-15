@@ -18,7 +18,7 @@
           <a
             href="https://github.com/SHxKM/django-vue-ssr"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener"
           >
             <fa :icon="['fab', 'github']"/>
           </a>
