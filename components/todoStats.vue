@@ -29,10 +29,7 @@
           href="https://devcenter.heroku.com/articles/free-dyno-hours#dyno-sleeping"
           rel="noopener"
           target="_blank"
-        >
-          that
-          sleeps
-        </a> after 30 minutes of inactivity. Therefore it could load much slower than it's supposed to
+        >that sleeps</a> after 30 minutes of inactivity. Therefore it could load much slower than it's supposed to
         when it first "wakes up".
       </p>
     </div>
