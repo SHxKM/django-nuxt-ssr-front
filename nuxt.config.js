@@ -44,7 +44,6 @@ export default {
   */
   css: [
     '@assets/style/main.pcss'
-    // { src: '@/assets/style/main2.scss', lang: 'scss' }
   ],
   /*
   ** Plugins to load before mounting the App
@@ -97,7 +96,8 @@ export default {
       parser: 'postcss-scss',
       // Add plugin names as key and arguments as value
       plugins: {
-        'tailwindcss': path.resolve(__dirname, './tailwind.config.js')
+        'tailwindcss': path.resolve(__dirname, './tailwind.config.js'),
+        'postcss-nested': {}
       }
     },
 

@@ -8,12 +8,6 @@
           in web development that I haven't used before.
         </p>
         <p>
-          This project is over-engineered on the one hand,
-          and not really production-ready on the other (you can help with that).
-          My goal wasn't to build a todo app per se, but to expirement with all the "cutting-edge" stuff
-          out there.
-        </p>
-        <p>
           It can serve as a general template, but is not to be relied upon to utilize best practices in produciton.
           <a
             href="https://github.com/SHxKM/django-vue-ssr"
@@ -39,7 +33,7 @@
           <code>Nuxt.js</code> framework to make life a little easier. A
           <code>Vuex</code> store handles state management,
           and the young but wonderful
-          <code>Tailwind</code> is used as a CSS framekwork.
+          <code>Tailwind</code> is used as a CSS framework.
         </p>
       </div>
       <div class="w-full md:w-1/3">

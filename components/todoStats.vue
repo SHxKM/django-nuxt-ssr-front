@@ -13,7 +13,7 @@
     </p>
     <p>
       Watch how this entirely independent component utilizes a
-      <code>Vuex</code> store (state) in order to update the todo counter whenever a change ocurrs.
+      <code>Vuex</code> store (state) in order to update the todo counter whenever a change occurs.
     </p>
     <div class="bg-green-200 rounded p-3 border-green-400 border-2 max-w-xs mb-3">
       <p class="text-green-700">
