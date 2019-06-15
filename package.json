@@ -11,7 +11,6 @@
     "generate": "nuxt generate",
     "heroku-postbuild": "npm run build"
   },
-  "typings": "dist/index",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
     "@nuxtjs/axios": "^5.4.1",

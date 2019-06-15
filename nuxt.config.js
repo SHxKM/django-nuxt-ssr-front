@@ -97,7 +97,7 @@ export default {
       parser: 'postcss-scss',
       // Add plugin names as key and arguments as value
       plugins: {
-        'tailwindcss': path.resolve(__dirname, './tailwind.config.js'),
+        'tailwindcss': path.resolve(__dirname, './tailwind.config.js')
       }
     },
 
