@@ -36,6 +36,7 @@
         <a
           class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
           target="_blank"
+          rel="noreferrer"
           href="https://github.com/SHxKM/django-vue-ssr"
         >Github</a>
       </div>

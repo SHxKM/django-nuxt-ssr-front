@@ -27,7 +27,7 @@
         dyno
         <a
           href="https://devcenter.heroku.com/articles/free-dyno-hours#dyno-sleeping"
-          rel="noreferrer"
+          rel="noopener"
           target="_blank"
         >
           that
