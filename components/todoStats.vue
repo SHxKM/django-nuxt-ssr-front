@@ -1,10 +1,15 @@
 <template>
   <div>
-    <h3 class="text-3xl mb-3">Your to-do stats</h3>
+    <h3 class="mb-3 text-3xl">
+      Your to-do stats
+    </h3>
     <p>
       <b>
         You have
-        <transition name="fade" mode="out-in">
+        <transition
+          name="fade"
+          mode="out-in"
+        >
           <span :key="todos_counter">{{ todos_counter }}</span>
         </transition>
         <span v-if="todos_counter !== 1">items</span>
@@ -37,37 +42,21 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from "vuex"
 
 export default {
   name: "ToDoStats",
   data: () => ({
     animateOn: "none",
-    updatedBefore: false,
-    initialText: "no internal (hover for disclaimer)",
-    pShouldAnimate: false
+    updatedBefore: false
   }),
   // there's no need to redefine props when we have computed
   computed: {
     ...mapGetters("todo", {
       todos_counter: "todos_counter"
     })
-  },
-  // watch: {
-  //     todos_counter() {
-  //         if (!this.updatedBefore) {
-  //             this.updatedBefore = true
-  //         } else {
-  //             this.animateOn = "fade"
-  //         }
-  //     }
-  // },
-  methods: {
-    changeText() {
-      this.initialText = "very little";
-    }
   }
-};
+}
 </script>
 
 <style scoped>

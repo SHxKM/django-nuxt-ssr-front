@@ -9,9 +9,22 @@
     "@nuxtjs"
   ],
   "rules": {
-    "quotes": [0, "double"], // don't warn on double quotes
-    "indent": [0, 4], // don't warn on double quotes
-    "vue/html-indent": [0, 4],
-    "no-console": "off" // don't warn on double quotes
+    "quotes": [
+      0,
+      "double"
+    ],
+    "indent": [
+      0,
+      4
+    ],
+    "vue/html-indent": [
+      0,
+      4
+    ],
+    "no-console": "off",
+    "semi": [
+      "error",
+      "never"
+    ]
   }
 }
