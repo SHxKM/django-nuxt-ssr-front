@@ -8,8 +8,7 @@ code {
     @apply p-1;
     @apply rounded;
     @apply text-purple-600;
-    @apply text-sm;
-
+    @apply text-xs;
     a {
         @apply underline;
     }
@@ -17,11 +16,25 @@ code {
 }
 
 a {
-    @apply text-teal-500;
-    @apply underline;
-
+    @apply text-green-600;
+    
     &:hover {
-        @apply text-teal-700;
+        @apply text-green-500;
+    }
+}
+
+
+
+.shadow-svg {
+  -webkit-filter: drop-shadow( -2px 1px 2px  rgba(0, 0, 0, .25));
+  filter: drop-shadow( -2px 1px 2px  rgba(0, 0, 0, .25));
+  /* Similar syntax to box-shadow */
+}
+
+nav .svg-inline--fa {
+    @apply text-gray-700;
+    &:hover {
+        @apply text-green-600;
     }
 }
 
@@ -38,21 +51,6 @@ button:focus {
     @apply outline-none;
 }
 
-
-
-
-footer {
-
-    a {
-        @apply text-gray-200;
-    }
-
-
-    a:hover {
-        @apply text-white;
-    }
-
-}
 
 :invalid {
     box-shadow: none; /* fix for https://stackoverflow.com/questions/47997487/why-do-required-inputs-in-vue-js-seem-to-automatically-trigger-validation-in-chi?rq=1 */

@@ -1,27 +1,28 @@
 <template>
-  <div class="card rounded border-2 mb-4">
+  <div class="card">
     <div class="p-3">
-      <div class="text-lg mb-2 font-semibold">
-        {{ todo.title }}
-      </div>
-      <div class="text-gray-800 mb-3">
-        {{ todo.description }}
-      </div>
-      <div class="text-right mr-1 mt-5">
-        <button
+      <div class="flex justify-between text-gray-700 text-sm font-bold leading-none tracking-tighter">
+          <p class="mb-1">
+            {{ todo.title }}
+          </p>
+          <span class="align-middle">
+          <fa
           :id="todo.id"
-          :class="{ 'blink-button': beingModified, 'bg-red-700 rounded p-2 text-white align-right font-bold': true }"
-          @click="deleteToDo(todo.id)"
-        >
-          {{ removeButtonText }}
-        </button>
+          :icon="taskIcon"
+          :class="{ 'blink-button': beingModified, 'mr-1 shadow-lg text-gray-600 text-xs align-bottom hover:text-green-500 cursor-pointer': true }"
+          @click="deleteToDo(todo.id)"/>
+          </span>
       </div>
+        <div class="text-gray-600 text-xs">
+          {{ todo.description }}
+        </div>
     </div>
   </div>
 </template>
 
 <script>
 import { mapActions } from "vuex"
+
 // helper function
 function sleep(time) {
   return new Promise(resolve => setTimeout(resolve, time))
@@ -34,7 +35,8 @@ export default {
   data() {
     return {
       beingModified: false,
-      removeButtonText: "Remove"
+      removeButtonText: "Remove",
+      taskIcon: "check-square"
     }
   },
   methods: {
@@ -54,7 +56,7 @@ export default {
     },
     markAsFailed() {
       this.beingModified = false
-      this.removeButtonText = "Couldn't remove. Retry?"
+      this.taskIcon = "exclamation-triangle"
     }
   }
 }

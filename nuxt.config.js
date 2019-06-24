@@ -64,6 +64,10 @@ export default {
         {
           set: '@fortawesome/free-brands-svg-icons',
           icons: ['faGithub']
+        },
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['faHome', 'faQuestionCircle', 'faList', 'faCheckSquare', 'faExclamationTriangle', 'faPlus']
         }
       ]
     }]

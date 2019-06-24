@@ -1,20 +1,17 @@
 <template>
-  <div class="flex flex-wrap mt-6 mr-6 lg:justify-between">
-    <todo-list class="mb-8 lg:mr-0 mr-12" />
-    <todo-create-form class="mb-8 lg:w-1/3" />
-    <todo-stats class="lg:w-1/3 md:w-2/3" />
-  </div>
+  <div class="flex flex-wrap flex-col justify-center items-center sm:justify-start sm:items-start justify-start  sm:flex-row">
+    <todo-list class="mb-6 sm:mb-0 mr-0 sm:mr-3 shadow-lg"/>
+    <todo-create-form class="shadow-lg "/>
+</div>
 </template>
 
 <script>
 import todoList from "../components/todoList"
-import todoStats from "../components/todoStats"
 import todoCreateForm from "../components/todoCreateForm"
 
 export default {
   components: {
     todoList,
-    todoStats,
     todoCreateForm
   },
 

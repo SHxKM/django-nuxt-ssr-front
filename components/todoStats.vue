@@ -3,40 +3,16 @@
     <h3 class="mb-3 text-3xl">
       Your to-do stats
     </h3>
-    <p>
-      <b>
-        You have
-        <transition
-          name="fade"
-          mode="out-in"
-        >
-          <span :key="todos_counter">{{ todos_counter }}</span>
-        </transition>
-        <span v-if="todos_counter !== 1">items</span>
-        <span v-else>item</span>
-      </b>.
-    </p>
+    <p/>
     <p>
       Watch how this entirely independent component utilizes a
       <code>Vuex</code> store (state) in order to update the todo counter whenever a change occurs.
     </p>
     <div class="bg-green-200 rounded p-3 border-green-400 border-2 max-w-xs mb-3">
-      <p class="text-green-800">
-        <span class="font-bold">Realtime:</span> Open two different tabs to see how
-        item creation and deletion are synced betwen clients.
-      </p>
+      <p class="text-green-800"/>
     </div>
     <div class="bg-yellow-200 rounded p-3 border-yellow-400 border-2 max-w-xs">
-      <p class="text-yellow-800">
-        <span class="font-bold">Note:</span> This demo app is hosted on a free Heroku
-        dyno
-        <a
-          href="https://devcenter.heroku.com/articles/free-dyno-hours#dyno-sleeping"
-          rel="noopener"
-          target="_blank"
-        >that sleeps</a> after 30 minutes of inactivity. Therefore it could load much slower than it's supposed to
-        when it first "wakes up".
-      </p>
+      <p class="text-yellow-800"/>
     </div>
   </div>
 </template>
@@ -47,8 +23,8 @@ import { mapGetters } from "vuex"
 export default {
   name: "ToDoStats",
   data: () => ({
-    animateOn: "none",
-    updatedBefore: false
+    animateOn: "none"
+
   }),
   // there's no need to redefine props when we have computed
   computed: {

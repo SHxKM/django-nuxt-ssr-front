@@ -1,58 +1,36 @@
 <template>
-  <div>
-    <h3 class="mb-3 text-3xl">
-      Create a new to-do item
-    </h3>
-    <form
-      class="w-full max-w-sm"
-      @submit.prevent="onAddTask"
-    >
-      <div class="mb-6 md:flex md:items-center">
-        <div class="md:w-1/3">
-          <label
-            class="mb-1 md:mb-0 pr-4 block text-gray-700 font-bold md:left"
-            name="to do item title"
-            for="task-title"
-          >Title</label>
-        </div>
-        <div class="md:w-2/3">
+  <div class="rounded">
+    <div class="rounded-sm rounded-b-none text-sm bg-blue-500 text-white pl-3 py-1 uppercase">
+      <fa :icon="['fas', 'plus']"/>
+    </div>
+
+    <form @submit.prevent="onAddTask">
+        <div class="p-3 text-xs">
+        <div class="flex mb-6 md:items-center">
           <input
-            id="task-title"
-            v-model="task.title"
-            required
-            class="py-2 px-4 bg-gray-200 text-gray-800 border-gray-200 border-2 rounded w-full leading-tight focus:outline-none focus:bg-white focus:border-teal-500 appearance-none"
-            type="text"
-            placeholder="Go to the store"
-          >
+              id="task-title"
+              v-model="task.title"
+              required
+              class="py-2 px-4 text-gray-800 border-gray-200 border-2  rounded w-full focus:outline-none focus:bg-white focus:border-blue-500 appearance-none"
+              type="text"
+              placeholder="Go to the store">
         </div>
-      </div>
-      <div class="md:flex md:items-center mb-6">
-        <div class="md:w-1/3">
-          <label
-            class="mb-1 md:mb-0 pr-4 block md:text-left text-gray-700 font-bold"
-            name="to do item description"
-            for="task-description"
-          >Description</label>
-        </div>
-        <div class="md:w-2/3">
+        <div class="md:flex md:items-center mb-6">
           <textarea
             id="task-description"
             v-model="task.description"
-            class="py-2 px-4 bg-gray-200 text-gray-800 border-2 border-gray-200 appearance-none rounded w-full leading-tight focus:outline-none focus:bg-white focus:border-teal-500"
-            placeholder="Remember the milk.."
-          />
+            class="py-2 px-4 text-gray-800 leading-none border-2 border-gray-200 appearance-none rounded w-full focus:outline-none focus:bg-white focus:border-blue-500"
+            placeholder="Remember the milk.."/>
+        </div>
+        <div class="text-center">
+            <div>
+            <button
+              class="py-2 px-4 bg-blue-500 leading-none bg-local text-white font-bold rounded hover:bg-blue-600 focus:shadow-outline focus:outline-none"
+              :class="{ 'blink-button': beingSubmitted }"
+              type="submit">
+                Submit
+              </button>
           </div>
-      </div>
-      <div class="md:flex md:items-center">
-        <div class="md:w-1/3" />
-        <div class="md:w-2/3">
-          <button
-            class="py-2 px-4 bg-teal-700 text-white font-bold rounded hover:bg-teal-600 focus:shadow-outline focus:outline-none"
-            :class="{ 'blink-button': beingSubmitted }"
-            type="submit"
-            >
-              Submit
-            </button>
         </div>
       </div>
     </form>

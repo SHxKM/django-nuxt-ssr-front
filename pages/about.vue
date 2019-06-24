@@ -1,10 +1,11 @@
 <template>
-  <div class="p-6">
-    <div class="flex flex-wrap">
-      <div class="w-full md:w-1/4 mr-8">
-        <h4 class="text-3xl">About To Do with Vue</h4>
+  <div class="text-sm max-w-md border-b-2 pb-6">
+      <div>
+        <h4 class="text-base font-semibold">
+          About To Do with Vue
+        </h4>
         <p>
-          <b>Django To Do With Vue v2</b> is an expirement in utilizing technologies and practices
+          <i>Django To Do With Vue v2</i> is an expirement in utilizing technologies and practices
           in web development that I haven't used before.
         </p>
         <p>
@@ -12,20 +13,20 @@
           <a
             href="https://github.com/SHxKM/django-vue-ssr"
             target="_blank"
-            rel="noopener"
-          >
+            rel="noopener">
             <fa :icon="['fab', 'github']"/>
           </a>
         </p>
       </div>
-      <div class="w-full md:w-1/3 mr-8">
-        <h4 class="text-3xl">Stack</h4>
+      <div>
+        <h4 class="text-base font-semibold">
+          Stack
+        </h4>
         <p>This web-app is built as a Vue SSR app, which means some of the content is rendered server-side in order to avoid SEO penalties.</p>
         <p>
           The backend is built in Python with Django and the
           <a
-            href="https://www.django-rest-framework.org/"
-          >Django REST framework</a>.
+            href="https://www.django-rest-framework.org/">Django REST framework</a>.
         </p>
         <p>
           The frontend is where it gets more interesting.
@@ -36,10 +37,11 @@
           <code>Tailwind</code> is used as a CSS framework.
         </p>
       </div>
-      <div class="w-full md:w-1/3">
-        <h4 class="text-3xl">Deployment to Heroku</h4>
+      <div>
+        <h4 class="text-base font-semibold">
+        Deployment to Heroku
+        </h4>
         <p>The backend and frontend apps are deployed separately.</p>
       </div>
-    </div>
   </div>
 </template>

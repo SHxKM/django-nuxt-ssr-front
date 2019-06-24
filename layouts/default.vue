@@ -1,15 +1,17 @@
 <template>
-  <div class="min-h-screen flex flex-col font-sans">
-    <app-navbar />
-    <nuxt class="ml-6 flex-grow" />
-    <app-footer />
+  <div class="flex flex-col justify-between min-h-screen mx-auto max-w-lg px-3">
+  <div class="py-8">
+    <app-navbar id="navbar" class="mb-12 flex-grow"/>
+    <nuxt class="max-w-lg mx-auto"/>
   </div>
+  <app-footer class="max-w-sm mx-auto my-12"/>
+</div>
 </template>
 
 <script>
   import appNavbar from '~/components/partials/Navbar'
   import appFooter from '~/components/partials/footer'
-  
+
   export default {
     components: {
       appNavbar,
