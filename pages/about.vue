@@ -10,12 +10,6 @@
         </p>
         <p>
           It can serve as a general template, but is not to be relied upon to utilize best practices in produciton.
-          <a
-            href="https://github.com/SHxKM/django-vue-ssr"
-            target="_blank"
-            rel="noopener">
-            <fa :icon="['fab', 'github']"/>
-          </a>
         </p>
       </div>
       <div>
