@@ -36,7 +36,7 @@ export default {
     return {
       beingModified: false,
       removeButtonText: "Remove",
-      taskIcon: "check-square"
+      taskIcon: "window-close"
     }
   },
   methods: {

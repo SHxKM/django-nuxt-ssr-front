@@ -67,7 +67,7 @@ export default {
         },
         {
           set: '@fortawesome/free-solid-svg-icons',
-          icons: ['faHome', 'faQuestionCircle', 'faList', 'faCheckSquare', 'faExclamationTriangle', 'faPlus']
+          icons: ['faHome', 'faQuestionCircle', 'faList', 'faWindowClose', 'faExclamationTriangle', 'faPlus']
         }
       ]
     }]
