@@ -22,7 +22,7 @@
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://github.com/SHxKM/django-vue-ssr"><fa :icon="['fab', 'github']"/></a>
+          href="https://github.com/SHxKM/django-nuxt-ssr-front"><fa :icon="['fab', 'github']"/></a>
       </div>
   </nav>
 </template>

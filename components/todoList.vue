@@ -1,6 +1,6 @@
 <template>
-  <div class="border-1 rounded">
-    <div class="border-1 rounded-sm rounded-b-none text-sm bg-green-500 text-white pl-3 py-1">
+  <div class="rounded border overflow-hidden">
+    <div class="text-sm bg-green-500 text-white pl-3 py-1">
       <fa :icon="['fas', 'list']"/>
       <b>
         <transition
@@ -26,7 +26,7 @@
     <p v-if="todos.length === 0" class="text-gray-700 w-3/4">
       Looks like you don't have any to do items...
     </p>
-</div>
+  </div>
 </template>
 
 <script>
@@ -67,6 +67,7 @@ export default {
         /* .list-complete-leave-active below version 2.1.8 */ {
   opacity: 0;
   transform: translateY(30px);
+  margin-top: 30px;
 }
 
 .list-complete-leave-active {
@@ -75,7 +76,8 @@ export default {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: all 0.5s;
+  transition: all 0.25s;
+
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;

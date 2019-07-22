@@ -1,6 +1,6 @@
 <template>
-  <div class="rounded">
-    <div class="rounded-sm rounded-b-none text-sm bg-blue-500 text-white pl-3 py-1 uppercase">
+  <div class="rounded border overflow-hidden">
+    <div class="text-sm bg-blue-500 text-white pl-3 py-1 uppercase">
       <fa :icon="['fas', 'plus']"/>
     </div>
 

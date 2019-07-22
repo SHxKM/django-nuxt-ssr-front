@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-wrap flex-col justify-center items-center sm:justify-start sm:items-start justify-start  sm:flex-row">
-    <todo-list class="mb-6 sm:mb-0 mr-0 sm:mr-3 shadow-lg"/>
-    <todo-create-form class="shadow-lg "/>
+    <todo-list class="mb-6 sm:mb-0 mr-0 sm:mr-3"/>
+    <todo-create-form/>
 </div>
 </template>
 
